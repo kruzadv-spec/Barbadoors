@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbadoors — Арт‑двері з ручним розписом</title>
+  <meta name="description" content="Преміальні арт‑двері з ручним розписом під ваш проєм. Київ та область.">
+  <style>
+  :root{--maxw:1100px;--pad:22px;--radius:16px}
+  *{box-sizing:border-box} html,body{margin:0}
+  body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;color:#111;background:#fbfbfb;line-height:1.55}
+  a{color:inherit;text-decoration:none}
+  header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee;z-index:10;transition:all .25s ease;backdrop-filter:saturate(150%) blur(6px)}
+  header.scrolled{border-color:#e6e6e6;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+  .nav{max-width:var(--maxw);margin:0 auto;padding:12px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:16px;transition:padding .25s ease}
+  header.scrolled .nav{padding:8px var(--pad)}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.2px}
+  .brand svg{height:26px;width:auto}
+  .links a{margin:0 12px;opacity:.85} .links a:hover{opacity:1}
+  .hero{max-width:var(--maxw);margin:0 auto;padding:56px var(--pad)}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+  @media (max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+  .tag{display:inline-block;padding:6px 10px;border:1px solid #e6e6e6;border-radius:999px;font-size:13px;background:#fff}
+  h1{margin:14px 0 10px 0;font-size:44px;line-height:1.1;letter-spacing:-.2px}
+  .sub{opacity:.85;font-size:18px;margin:10px 0 26px 0}
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{padding:12px 16px;border-radius:12px;border:1px solid #111;background:#111;color:#fff;font-weight:600;transition:transform .15s ease, box-shadow .15s ease}
+  .btn:hover{transform:translateY(-1px);box-shadow:0 6px 16px rgba(0,0,0,.12)}
+  .btn.alt{background:#fff;color:#111;border:1px solid #111}
+  .section{max-width:var(--maxw);margin:0 auto;padding:42px var(--pad)}
+  h2{font-size:28px;margin:0 0 14px 0}
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(3,1fr)}
+  @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:640px){.grid{grid-template-columns:1fr}}
+  .card{background:#fff;border:1px solid #eee;border-radius:var(--radius);overflow:hidden;box-shadow:0 1px 0 rgba(0,0,0,.02);transform:translateY(8px);opacity:0;transition:transform .5s ease, opacity .6s ease}
+  .card.show{transform:translateY(0);opacity:1}
+  .imgwrap{overflow:hidden}
+  .img{aspect-ratio:4/5;background:#f1f1f1;width:100%;display:block;object-fit:cover;transition:transform .35s ease}
+  .card:hover .img{transform:scale(1.03)}
+  .hero-pic{width:100%;height:100%;max-height:520px;aspect-ratio:4/5;border-radius:16px;border:1px solid #eee;object-fit:cover;object-position:center;transform:translateY(8px);opacity:0;transition:transform .6s ease, opacity .6s ease}
+  .hero-pic.show{transform:translateY(0);opacity:1}
+  .kv{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media (max-width:900px){.kv{grid-template-columns:1fr}}
+  .kv .box{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;transform:translateY(8px);opacity:0;transition:transform .5s ease, opacity .6s ease}
+  .box.show{transform:translateY(0);opacity:1}
+  .list{margin:0;padding:0;list-style:none} .list li{padding:6px 0;border-bottom:1px dashed #eee}
+  .footer{max-width:var(--maxw);margin:0 auto;padding:40px var(--pad);border-top:1px solid #eee;font-size:14px;color:#333}
+  .note{font-size:13px;opacity:.85}
+  .about{background:#fff;border:1px solid #eee;border-radius:var(--radius);padding:18px;transform:translateY(8px);opacity:0;transition:transform .5s ease, opacity .6s ease}
+  .about.show{transform:translateY(0);opacity:1}
+  </style>
+</head>
+<body>
+  <header id="topbar">
+    <div class="nav">
+      <div class="brand">
+        <svg viewBox="0 0 160 32" aria-hidden="true"><text x="0" y="22" font-family="Georgia, serif" font-weight="700" font-size="24">Barbadoors</text></svg>
+      </div>
+      <div class="links">
+        <a href="#about">Про бренд</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#process">Як замовити</a>
+        <a href="#contacts">Контакти</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="tag">Крафтові арт‑двері · Київ</span>
+        <h1>Арт‑двері з ручним розписом</h1>
+        <p class="sub">Кожне полотно — індивідуальна робота художника: ідея → ескіз → розпис → захист. Під ваш проєм, стиль та бюджет.</p>
+        <div class="cta">
+          <a class="btn" href="https://www.instagram.com/barbadoors" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn alt" href="https://wa.me/380683023003" target="_blank" rel="noopener">Написати у WhatsApp</a>
+        </div>
+      </div>
+      <div class="imgwrap">
+        <img class="hero-pic" alt="Головне фото Barbadoors" 
+             src="images/hero.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5oZXJvLmpwZzwvdGV4dD4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nNDMwJyBmb250LXNpemU9JzIyJyBvcGFjaXR5PScuNyc+0JfQsNCy0LDQvdGC0LDQtiDRhNC+0YLQviDRgyAvaW1hZ2VzPC90ZXh0PgogIDwvZz4KPC9zdmc+'" loading="lazy"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>Про Barbadoors</h2>
+    <div class="about">
+      Ми створюємо не просто двері, а арт‑об’єкти, які живуть у просторі. Кожне полотно — ручний розпис, захищений лаком. Працюємо під індивідуальний проєм і стиль інтер’єру. Київ та область, доставка й монтаж за запитом.
+    </div>
+  </section>
+
+  <section id="catalog" class="section">
+    <h2>Каталог</h2>
+    <div class="grid">
+      
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-201" src="images/door1.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yMS5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-201 — монохром «Дерево життя»</div>
+          <div class="meta">Полотно 2000×700×40 мм · прихований монтаж · розпис акрилом · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1600 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-202" src="images/door2.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yMi5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-202 — абстракція «Лінії»</div>
+          <div class="meta">Полотно 2000×800×40 мм · класика · розпис акрилом · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1450 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-203" src="images/door3.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yMy5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-203 — мінімалізм «Монохром»</div>
+          <div class="meta">Полотно 2000×700×40 мм · прихований монтаж · розпис акрилом · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1300 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-204" src="images/door4.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yNC5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-204 — «Класика з патиною»</div>
+          <div class="meta">Полотно 2000×800×40 мм · класичний короб 100 мм · ручний розпис + патина · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1550 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-205" src="images/door5.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yNS5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-205 — «Золота абстракція»</div>
+          <div class="meta">Полотно 2000×700×40 мм · прихований монтаж · акрил + металізована фарба · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1700 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-206" src="images/door6.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yNi5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-206 — «Геометрія мінімал»</div>
+          <div class="meta">Полотно 2100×800×40 мм · прихований монтаж · монохромна геометрія · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1400 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-207" src="images/door7.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yNy5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-207 — «Природний камінь»</div>
+          <div class="meta">Полотно 2000×900×40 мм · класика · ефект мармуру у розписі · матовий лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1650 €</div>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="imgwrap">
+          <img class="img" alt="ART-208" src="images/door8.jpg" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMjAwJyBoZWlnaHQ9JzgwMCc+CiAgPGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSdnJyB4MT0nMCcgeTE9JzAnIHgyPScxJyB5Mj0nMSc+CiAgICA8c3RvcCBvZmZzZXQ9JzAlJyBzdG9wLWNvbG9yPScjZWZlZmVmJy8+CiAgICA8c3RvcCBvZmZzZXQ9JzEwMCUnIHN0b3AtY29sb3I9JyNkYWRhZGEnLz4KICA8L2xpbmVhckdyYWRpZW50PjwvZGVmcz4KICA8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2cpJy8+CiAgPGcgZmlsbD0nIzMzMycgZm9udC1mYW1pbHk9J0ludGVyLCBBcmlhbCwgSGVsdmV0aWNhLCBzYW5zLXNlcmlmJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJz4KICAgIDx0ZXh0IHg9JzYwMCcgeT0nMzgwJyBmb250LXNpemU9JzM4JyBmb250LXdlaWdodD0nNzAwJz5kb29yOC5qcGc8L3RleHQ+CiAgICA8dGV4dCB4PSc2MDAnIHk9JzQzMCcgZm9udC1zaXplPScyMicgb3BhY2l0eT0nLjcnPtCX0LDQstCw0L3RgtCw0LYg0YTQvtGC0L4g0YMgL2ltYWdlczwvdGV4dD4KICA8L2c+Cjwvc3ZnPg=='" loading="lazy"/>
+        </div>
+        <div class="body">
+          <div class="title">ART-208 — «Контрастні лінії»</div>
+          <div class="meta">Полотно 2000×750×40 мм · прихований монтаж · контрастний монохром · лак</div>
+          <div class="meta" style="margin-top:6px">Ціна: від 1800 €</div>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:12px">Інші сюжети та розміри — за індивідуальним замовленням.</p>
+  </section>
+
+  <section id="process" class="section">
+    <h2>Як замовити</h2>
+    <div class="kv">
+      <div class="box reveal">
+        <div class="title" style="font-weight:600">Порядок</div>
+        <ul class="list">
+          <li>1) Коротка консультація (онлайн)</li>
+          <li>2) Ескіз/референси та кошторис</li>
+          <li>3) Виготовлення полотна під проєм</li>
+          <li>4) Розпис та захисне покриття</li>
+          <li>5) Монтаж (опційно)</li>
+        </ul>
+      </div>
+      <div class="box reveal">
+        <div class="title" style="font-weight:600">Умови</div>
+        <ul class="list">
+          <li>Передоплата 50% · Баланс при готовності</li>
+          <li>Термін — залежно від складності</li>
+          <li>Доставка/монтаж: Київ та область</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="warranty" class="section">
+    <h2>Гарантія та догляд</h2>
+    <div class="about">
+      Гарантія 2 роки на полотно і захисне покриття розпису. Можлива реставрація та обслуговування у випадку механічних пошкоджень — узгоджується індивідуально.
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <h2>Контакти</h2>
+    <div class="kv">
+      <div class="box reveal">
+        <p style="margin:0 0 8px 0"><strong>Barbadoors</strong></p>
+        <p>Instagram: <a href="https://www.instagram.com/barbadoors" target="_blank" rel="noopener">@barbadoors</a></p>
+        <p>WhatsApp: <a href="https://wa.me/380683023003" target="_blank" rel="noopener">+38 068 302 3003</a></p>
+        <p>Email: <a href="mailto:barbadoors.art@gmail.com" target="_blank" rel="noopener">barbadoors.art@gmail.com</a></p>
+        <p>Адреса: Київ, вул. Деревообробна, 3В</p>
+      </div>
+      <div class="box reveal">
+        <p class="note">Показ у живу — за запитом. Онлайн‑консультація протягом дня.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>© 2025 Barbadoors. Усі права захищені.</div>
+  </footer>
+
+  <script>
+  // Header shrink on scroll
+  const topbar = document.getElementById('topbar') || document.querySelector('header');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 8) topbar.classList.add('scrolled'); else topbar.classList.remove('scrolled');
+  });
+
+  // Reveal on scroll
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if (e.isIntersecting) e.target.classList.add('show'); });
+  }, {threshold: .12});
+  document.querySelectorAll('.card, .hero-pic, .box, .about').forEach(el=>io.observe(el));
+  </script>
+</body>
+</html>
