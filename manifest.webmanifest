@@ -1,0 +1,13 @@
+{
+  "name": "Barbadoors",
+  "short_name": "Barbadoors",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

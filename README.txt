@@ -1,0 +1,1 @@
+Barbadoors full v3. Заміни hero.jpg та door1…door8.jpg своїми файлами.
