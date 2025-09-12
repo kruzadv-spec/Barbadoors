@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbadoors — Арт-двері</title>
+  <meta name="description" content="Barbadoors: двері з художнім розписом. Якість виготовлення та індивідуальний дизайн. Київ, вул. Деревообробна, 3В.">
+  <meta property="og:title" content="Barbadoors — Арт-двері">
+  <meta property="og:description" content="Двері з художнім розписом. Якість + індивідуальний дизайн.">
+  <meta property="og:image" content="./assets/images/og.jpg">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./assets/images/favicon.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script defer src="./assets/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <img src="./assets/images/favicon.png" alt="Barbadoors" style="height:32px;width:auto;">
+        <span style="font-weight:600;">Barbadoors</span>
+      </div>
+      <nav class="nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#about">Про бренд</a>
+        <a href="#how">Як замовити</a>
+        <a href="#warranty">Гарантія</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Floating Cart Button -->
+  <button id="cart-fab" aria-label="Кошик" style="position:fixed;right:16px;bottom:16px;border:1px solid #1a1a1a;border-radius:999px;padding:10px 14px;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.12);z-index:20;">
+    🛒 <span id="cart-count">0</span>
+  </button>
+
+  <!-- Cart Sidebar -->
+  <aside id="cart-drawer" style="position:fixed;top:0;right:-420px;width:360px;height:100vh;background:#fff;border-left:1px solid #E5E5E5;box-shadow:-12px 0 30px rgba(0,0,0,.08);z-index:30;display:flex;flex-direction:column;transition:right .3s;">
+    <div style="padding:14px 16px;border-bottom:1px solid #E5E5E5;display:flex;justify-content:space-between;align-items:center;">
+      <div style="font-weight:600;">Кошик</div>
+      <button id="cart-close" class="btn">Закрити</button>
+    </div>
+    <div id="cart-items" style="flex:1;overflow:auto;padding:10px 12px;"></div>
+    <div style="border-top:1px solid #E5E5E5;padding:12px 16px;">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+        <span>Сума</span>
+        <strong id="cart-total">0 ₴</strong>
+      </div>
+      <button id="cart-checkout" class="btn primary" style="width:100%;">Оформити в WhatsApp</button>
+      <div style="margin-top:8px;text-align:center;font-size:12px;">
+        Або <a id="cart-email" href="#">оформити на email</a>
+      </div>
+    </div>
+  </aside>
+
+  <section class="hero">
+    <div class="overlay parallax" data-parallax-speed="0.15"></div>
+    <div class="content container">
+      <h1>Арт-двері, які працюють як двері і виглядають як витвір</h1>
+      <p>Ручний розпис. Точне виготовлення під проєм. Приховані петлі. Фарбована коробка та лиштва. Київ та область.</p>
+      <div style="margin-top:18px;">
+        <a class="btn primary" href="#catalog">Дивитися каталог</a>
+        <a class="btn" href="#contacts" style="margin-left:8px;">Написати в Instagram</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalog" class="section">
+    <div class="container">
+      <h2 style="margin:0 0 12px;">Каталог</h2>
+      <p class="muted" style="margin:0 0 24px;">8 прикладів. Формат 4:5. Після затвердження ескізу — виготовлення до 50 днів.</p>
+      <div class="grid catalog">
+        <div class="card" data-id="door1" data-name="Door 1" data-price="12000">
+          <img src="./assets/images/door1.jpg" alt="Door 1">
+          <div class="body">
+            <div class="title">Door 1</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">12 000 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door2" data-name="Door 2" data-price="13500">
+          <img src="./assets/images/door2.jpg" alt="Door 2">
+          <div class="body">
+            <div class="title">Door 2</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">13 500 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door3" data-name="Door 3" data-price="14800">
+          <img src="./assets/images/door3.jpg" alt="Door 3">
+          <div class="body">
+            <div class="title">Door 3</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">14 800 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door4" data-name="Door 4" data-price="16000">
+          <img src="./assets/images/door4.jpg" alt="Door 4">
+          <div class="body">
+            <div class="title">Door 4</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">16 000 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door5" data-name="Door 5" data-price="17000">
+          <img src="./assets/images/door5.jpg" alt="Door 5">
+          <div class="body">
+            <div class="title">Door 5</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">17 000 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door6" data-name="Door 6" data-price="18500">
+          <img src="./assets/images/door6.jpg" alt="Door 6">
+          <div class="body">
+            <div class="title">Door 6</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">18 500 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door7" data-name="Door 7" data-price="19900">
+          <img src="./assets/images/door7.jpg" alt="Door 7">
+          <div class="body">
+            <div class="title">Door 7</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">19 900 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-id="door8" data-name="Door 8" data-price="21500">
+          <img src="./assets/images/door8.jpg" alt="Door 8">
+          <div class="body">
+            <div class="title">Door 8</div>
+            <div class="meta">Полотно 2000×700×40 • Петлі Otlav приховані • Розпис акрил + лак</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;">
+              <span class="price">21 500 ₴</span>
+              <button class="btn add-to-cart">Додати в кошик</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container grid" style="grid-template-columns: 1.1fr 1fr; gap: 28px;">
+      <div>
+        <h2 style="margin:0 0 12px;">Про бренд</h2>
+        <p>Малюнок наносимо лише на наші двері: огрунтоване фрезероване полотно, фарбована коробка та лиштва, точне виготовлення під ваш проєм.</p>
+        <p>Працюємо напряму. Без сторонніх комплектуючих. Малюнок виконується вручну натуральними матеріалами і покривається лаком.</p>
+      </div>
+      <div>
+        <img class="parallax" data-parallax-speed="0.08" src="./assets/images/about.jpg" alt="Barbadoors studio">
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="section">
+    <div class="container">
+      <h2 style="margin:0 0 12px;">Як замовити</h2>
+      <div class="steps">
+        <div class="step"><b>1.</b> Надсилаєте ідею або обираєте одну з 5 готових сюжетних ліній. Узгоджуємо стиль і кольори.</div>
+        <div class="step"><b>2.</b> Ми виготовляємо дверний комплект під ваш проєм. Паралельно готуємо ескіз.</div>
+        <div class="step"><b>3.</b> Ручний розпис. Покриття захисним лаком. Фінальний контроль якості.</div>
+        <div class="step"><b>4.</b> Доставка та монтаж у Києві та області.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="warranty" class="section">
+    <div class="container">
+      <h2 style="margin:0 0 12px;">Гарантія</h2>
+      <p>На дверний комплект — 24 місяці. На лаковане покриття розпису — 24 місяці. Якщо з’явились подряпини або сколи, виконуємо реставрацію як платну послугу.</p>
+    </div>
+  </section>
+
+  <section id="contacts" class="section">
+    <div class="container">
+      <h2 style="margin:0 0 12px;">Контакти</h2>
+      <p>Instagram: <a href="https://www.instagram.com/barbadoors" target="_blank">@barbadoors</a><br>
+         WhatsApp: <a href="https://wa.me/380683023003" target="_blank">+38 068 302 3003</a><br>
+         Email: <a href="mailto:barbadoors.art@gmail.com">barbadoors.art@gmail.com</a><br>
+         Адреса: Київ, вул. Деревообробна, 3В
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+      <small class="muted">© 2025 Barbadoors</small>
+      <small class="muted">UA • Легкі анімації, без важких бібліотек</small>
+    </div>
+  </footer>
+
+  <script>
+  const LS_KEY = 'bd_cart_v1';
+  const fmt = n => (n||0).toString().replace(/\B(?=(\d3)+(?!\d))/g,' ') + ' ₴';
+
+  const cart = {
+    items: {}, load() { try { this.items = JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch { this.items = {}; } },
+    save() { localStorage.setItem(LS_KEY, JSON.stringify(this.items)); },
+    add(p) { if(!this.items[p.id]) this.items[p.id] = {...p, qty:0}; this.items[p.id].qty++; this.save(); ui.update(); },
+    remove(id) { delete this.items[id]; this.save(); ui.update(); },
+    setQty(id,q) { if(this.items[id]) { this.items[id].qty = Math.max(1, q|0); this.save(); ui.update(); } },
+    count() { return Object.values(this.items).reduce((s,i)=>s+i.qty,0); },
+    total() { return Object.values(this.items).reduce((s,i)=>s+i.qty*i.price,0); }
+  };
+
+  const ui = {
+    els: {
+      fab: document.getElementById('cart-fab'),
+      count: document.getElementById('cart-count'),
+      drawer: document.getElementById('cart-drawer'),
+      close: document.getElementById('cart-close'),
+      list: document.getElementById('cart-items'),
+      total: document.getElementById('cart-total'),
+      checkout: document.getElementById('cart-checkout'),
+      email: document.getElementById('cart-email'),
+    },
+    open(){ this.els.drawer.style.right = '0'; },
+    close(){ this.els.drawer.style.right = '-420px'; },
+    update() {
+      this.els.count.textContent = cart.count();
+      this.els.total.textContent = fmt(cart.total());
+      const rows = Object.values(cart.items).map(i => `
+        <div style="display:flex;gap:10px;align-items:center;border-bottom:1px solid #eee;padding:10px 0;">
+          <img src="./assets/images/${i.id}.jpg" alt="${i.name}" style="width:56px;height:70px;object-fit:cover;border:1px solid #eee;border-radius:6px;">
+          <div style="flex:1;">
+            <div style="font-weight:600;">${i.name}</div>
+            <div style="font-size:12px;opacity:.7;">${fmt(i.price)}</div>
+            <div style="margin-top:6px;display:flex;gap:6px;align-items:center;">
+              <button class="btn qty-dec" data-id="${i.id}">−</button>
+              <input class="qty-input" data-id="${i.id}" value="${i.qty}" style="width:44px;text-align:center;padding:6px;border:1px solid #ddd;border-radius:8px;">
+              <button class="btn qty-inc" data-id="${i.id}">+</button>
+              <button class="btn" data-remove="${i.id}" style="margin-left:auto;">Видалити</button>
+            </div>
+          </div>
+        </div>`).join('') || '<div style="padding:20px;opacity:.7;">Кошик порожній</div>';
+      this.els.list.innerHTML = rows;
+    }
+  };
+
+  cart.load(); ui.update();
+
+  document.querySelectorAll('.add-to-cart').forEach(btn=>{
+    btn.addEventListener('click', e=>{
+      const card = e.target.closest('.card');
+      const prod = {
+        id: card.dataset.id,
+        name: card.dataset.name,
+        price: parseInt(card.dataset.price, 10) || 0
+      };
+      cart.add(prod);
+    });
+  });
+
+  ui.els.fab.addEventListener('click', ()=>ui.open());
+  ui.els.close.addEventListener('click', ()=>ui.close());
+
+  ui.els.list.addEventListener('click', e=>{
+    const idDec = e.target.closest('.qty-dec')?.dataset.id;
+    const idInc = e.target.closest('.qty-inc')?.dataset.id;
+    const rm = e.target.dataset.remove;
+    if (idDec) { const it=cart.items[idDec]; if (it) cart.setQty(idDec, it.qty-1); }
+    if (idInc) { const it=cart.items[idInc]; if (it) cart.setQty(idInc, it.qty+1); }
+    if (rm) cart.remove(rm);
+  });
+  ui.els.list.addEventListener('change', e=>{
+    if (e.target.classList.contains('qty-input')) {
+      const id = e.target.dataset.id;
+      cart.setQty(id, parseInt(e.target.value,10)||1);
+    }
+  });
+
+  function buildOrderText(){
+    const lines = Object.values(cart.items).map(i=>`• ${i.name} × ${i.qty} = ${i.qty*i.price} грн`);
+    lines.push(`Разом: ${cart.total()} грн`);
+    lines.push(`Контакт: @barbadoors або +380683023003`);
+    return encodeURIComponent(lines.join('%0A'));
+  }
+  ui.els.checkout.addEventListener('click', ()=>{
+    const msg = buildOrderText();
+    const url = `https://wa.me/380683023003?text=${msg}`;
+    window.open(url, '_blank');
+  });
+  ui.els.email.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const subject = encodeURIComponent('Замовлення Barbadoors');
+    const body = buildOrderText();
+    window.location.href = `mailto:barbadoors.art@gmail.com?subject=${subject}&body=${body}`;
+  });
+  </script>
+</body>
+</html>
